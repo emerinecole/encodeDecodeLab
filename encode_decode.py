@@ -13,9 +13,12 @@ def encode(seq):
     print("Your password has been encoded and stored!")
     return new
 
-
+# alan made function to decode the encoded password
 def decode(seq):
-    pass
+    for item in seq:
+        temp = int(item) - 3
+        decode += str(temp)
+    return decode
 
 
 #main function to call the loop for encoding and decoding
